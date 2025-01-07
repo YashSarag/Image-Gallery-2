@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const password = "YashSarag"; // Set your password here
+            let userPassword = prompt("Enter the password to access this page:");
+
+            if (userPassword !== password) {
+                alert("Incorrect password! Redirecting...");
+                window.location.href = "https://example.com"; // Redirect to another page
+            }
+        });
+    </script>
 </head>
 <body>
     <div id="wrapper">
